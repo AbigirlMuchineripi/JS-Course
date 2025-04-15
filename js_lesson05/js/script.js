@@ -4,22 +4,22 @@
 // Write code that will return a random letter from your name
 
 // Character Selector in the string
-console.log("James".charAt());
+console.log("Abigirl".charAt());
 
-// Random Number Generator from 1-5 (5 characters in the name "James")
-console.log(Math.floor(Math.random() * 5 + 1));
+// Random Number Generator from 1-7 (7 characters in the name "Abigirl")
+console.log(Math.floor(Math.random() * 7 + 1));
 
 // Now combine both small functions into one solution
 
-// String characters positions start at 0. Since your name has 5 characters the range must be 0-4.
+// String characters positions start at 0. Since my name has 7 characters the range must be 0-6.
 
-// Generate a random number form 0-4.
-console.log("James".charAt(Math.floor(Math.random() * 5)));
+// Generate a random number from 0-6.
+console.log("Abigirl".charAt(Math.floor(Math.random() * 7)));
 
 
 
 // Now create a sloution that works for ALL names.
-const anyName = "Cornelius";
+const anyName = "Zimbabwe";
 
 // The name is a variable. "anyName.length" takes into account how long each variable is.
 console.log(anyName.charAt(Math.floor(Math.random() * anyName.length)));
