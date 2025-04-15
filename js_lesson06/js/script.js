@@ -10,26 +10,26 @@
 
 // Soup Example
 
-let customerIsBanned = true;
-let soup = "chicken noodle soup";
-let crackers = true;
+let customerIsBanned = true;//change here to false 
+let chicken = "grilled chicken";
+let chips = true;
 let reply;
 
 if(customerIsBanned) {
-    reply = `No soup for you!`;
-} else if (soup && crackers) {
-    reply = `Here's your order of ${soup} & crackers.`;
-} else if (soup) {
-    reply = `Here's your order of ${soup}.`;
+    reply = `No chicken for you!`;
+} else if (chicken && chips) {
+    reply = `Here's your order of ${chicken} & chips.`;
+} else if (chicken) {
+    reply = `Here's your order of ${chicken}.`;
 } else {
-    reply = `Sorry, we're out of ${soup}.`;
+    reply = `Sorry, we're out of ${chicken}.`;
 }
 
 console.log(reply);
 
 // Test Score Example
 
-let testScore = 57;
+let testScore = 100;
 let collegeStudent = true;
 let grade;
 
@@ -52,6 +52,8 @@ console.log(grade);
 
 
 // Decision Tree
+
+
 if (playerOne === computer) {
     // tie game
 } else if (playerOne === "rock") {
