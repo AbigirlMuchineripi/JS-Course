@@ -1,8 +1,8 @@
 // Loops
 
-// Increment by 1 from 1-50.
+// Increment by 1 from 1-10.
 let myNumber = 0;
-while (myNumber < 50) {
+while (myNumber < 10) {
   myNumber++;
   // myNumber += 2; Increments by 2
   console.log(myNumber);
@@ -13,28 +13,28 @@ while (myNumber < 50) {
 // Do While Loop
 do {
   console.log(myNumber);
-} while (myNumber < 50);
+} while (myNumber < 10);
 
 // For Loop
-for (let i = 0; i <= 10; i++) {
+for (let i = 0; i <= 5; i++) {
   console.log(i);
 }
 
-let myName = "James";
+let myName = "Abigirl";
 for (let i = 0; i <= myName.length; i++) {
   console.log(myName.charAt(i));
 }
 
 let counter = 0;
-let myLetter;
-while (counter <= 4) {
-  myLetter = myName[counter];
-  console.log(myLetter);
+let myLetters;
+while (counter <= 6) {
+  myLetters = myName[counter];
+  console.log(myLetters);
   if (counter === 1) {
     counter += 2;
     continue;
   }
-  if (myLetter === "e") break;
+  if (myLetters === "g") break;
   counter++;
 }
 console.log(counter);
