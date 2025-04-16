@@ -5,9 +5,9 @@
 // "var" is the least used. Used mainly for legacy code.
 
 // Global Scope = Define a variable, give it a value and it is avaliable everywhere.
-var x = 1;
-let y = 2;
-const z = 3;
+var x = 2;
+let y = 7;
+const z = 6;
 
 // Local Scope
 {
@@ -28,8 +28,8 @@ console.log(`global: ${y}`);
 console.log(`global: ${z}`);
 
 function myFunc2() {
-    var x = 10;
-    const z = 5;
+    var x = 30;
+    const z = 50;
   console.log(`function: ${x}`);
   console.log(`function: ${y}`);
   console.log(`function: ${z}`);
