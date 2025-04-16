@@ -1,4 +1,4 @@
-// First interactive Game
+// First interactive Game :Rock, Paper and Scissors
 
 let playGame = confirm("Shall we play rock, paper, scissors?");
 
