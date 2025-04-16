@@ -1,6 +1,7 @@
 // Conditionals : Ternary Operator
 
-// A Ternary Operator is shorthand for an "if else" statement
+// A Ternary Operator is shorthand 
+// for an "if else" statement
 
 // Syntax
 
@@ -8,21 +9,23 @@
 // ? = if
 // : = else
 
-let soup = "Chicken Noodle Soup";
-let response = soup ? "Yes, we have soup." : "Sorry, no soup today.";
-console.log(response)
+let order = "Sausage Pizza";
+let response = order ? "Yes, we have sausage pizza." : "Sorry, no sausage pizza today.";
+console.log(response);
 
 let isCustomerBanned = true;
-let soupAccess = isCustomerBanned ? "Sorry, no soup for you!" 
-: soup 
-? `Yes, we have ${soup} today.` 
-: "Sorry, no soup today.";
-console.log(soupAccess);
+let orderAccess = isCustomerBanned ? "Sorry, no sausage pizza for you!" 
+: order 
+? `Yes, we have ${order} today.` 
+: "Sorry, no sausage pizza today.";
+console.log(orderAccess);
 
-// For long ternary operators each part should be put on a new line for clean formatting
+// For long ternary operators 
+// each part should be put on
+// a new line for clean formatting
 
 // Grading Scale Example
-let testScore = 79;
+let testScore = 50;
 let myGrade = testScore > 89 ? "A"
 : testScore > 79 ? "B"
 : testScore > 69 ? "C"
@@ -31,11 +34,11 @@ let myGrade = testScore > 89 ? "A"
 console.log(`My test grade is a ${myGrade}.`)
 
 // Rock, Paper, Scissors Example
-let playerOne = "paper";
-let computer = "scissors";
-let result = playerOne === computer ? "Tie Game!"
-: playerOne === "rock" && computer === "paper" ? "Computer Wins!"
-: playerOne === "paper" && computer === "scissors" ? "Computer Wins!"
-: playerOne === "scissors" && computer === "rock" ? "Computer Wins!"
-: "playerOne Wins!";
+let Abby = "paper";
+let Dave = "scissors";
+let result = Abby === Dave ? "Tie Game!"
+: Abby === "rock" && Dave === "paper" ? "Dave Wins!"
+: Abby === "paper" && Dave === "scissors" ? "Dave Wins!"
+: Abby === "scissors" && Dave === "rock" ? "Dave Wins!"
+: "Abby Wins!";
 console.log(result);
