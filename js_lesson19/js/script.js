@@ -2,7 +2,7 @@
 const view1 = document.getElementById("view1"); // Select Element by ID
 console.log(view1);
 
-// The querySelector() method returns the first element that matches a CSS selector. You must speicfy if it is a class(.) or ID(#)
+// The querySelector() method returns the first element that matches a CSS selector. You must specify if it is a class(.) or ID(#)
 const view2 = document.querySelector("#view2");
 console.log(view2);
 
@@ -15,12 +15,12 @@ console.log(views);
 const sameViews = document.querySelectorAll(".view")
 console.log(sameViews);
 
-const divs = view1.querySelectorAll("div");
+const divs = view1.querySelectorAll("div");//By HTML Elements/tags
 console.log(divs);
 const sameDivs = view1.getElementsByTagName("div");
 console.log(sameDivs);
 
-const evenDivs = view1.querySelectorAll("div:nth-of-type(2n)");
+const evenDivs = view1.querySelectorAll("div:nth-of-type(2n)");//By selectors
 console.log(evenDivs);
 for (let i = 0; i < evenDivs.length; i++) {
   evenDivs[i].style.backgroundColor = "darkblue";
@@ -28,7 +28,7 @@ for (let i = 0; i < evenDivs.length; i++) {
   evenDivs[i].style.height = "200px";
 }
 
-const navText = document.querySelector("nav h1");
+const navText = document.querySelector("nav h1"); //Changing text
 console.log(navText);
 navText.textContent = "Hey World!";
 const navbar = document.querySelector("nav");

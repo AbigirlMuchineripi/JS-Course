@@ -1,7 +1,7 @@
 // Fetch API requires a discussion of...
 // Callbacks, Promises, and Async/Await 
 
-// Callbacks
+// Callbacks are functions passed to other functions as params
 function firstFunction(parameters, callback) {
     // Do stuff
     callback();
@@ -15,7 +15,8 @@ function firstFunction(parameters, callback) {
 }); */
 
 
-// Promises
+// Promises 
+// are used to remove callback hell
 // 3 states: Pending, Fulfilled, Rejected 
 
 const myPromise = new Promise((resolve, reject) => {
@@ -27,9 +28,12 @@ const myPromise = new Promise((resolve, reject) => {
     };
 });
 
-console.log(myPromise);
+console.log(myPromise); //fullfilled with no information
+
+//Chaining
 
 myPromise
+//thenables
 .then(value => {
     console.log(value);
 })
@@ -39,6 +43,8 @@ myPromise
 .catch(err => {
     console.error(err);
 })
+
+//Timeout
 
 const myNextPromise = new Promise((resolve, reject) => {
     setTimeout(function() {

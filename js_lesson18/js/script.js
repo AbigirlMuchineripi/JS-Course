@@ -1,7 +1,7 @@
 // Errors & Error Handling
 "use strict"; // Defines that JavaScript code should be executed in "strict mode"
 // With strict mode, you can not, for example, use undeclared variables.
-const variable = "James"; // Must declare "variable" with const.
+const variable = "Abigirl"; // Must declare "variable" with const.
 console.log(variable);
 
 // "ReferenceError" represents when a variable that doesn't exist (or hasn't yet been initialized) in the current scope is referenced.

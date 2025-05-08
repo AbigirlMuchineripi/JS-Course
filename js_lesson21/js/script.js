@@ -6,7 +6,7 @@
 // Avaliable to JS via the global variable: window
 
 // We do not have to type window. It is implied:
-window.alert("Ok!");
+window.alert("Ok!"); //or
 alert("Ok!");
 
 window.alert(window.location); // Returns the URL of a website
@@ -19,10 +19,11 @@ window.sessionStorage
 
 const myArray = ["eat", "sleep", "code"];
 const myObject = {
-  name: "James",
+  name: "Abigirl",
   hobbies: ["eat", "sleep", "code"],
   logName: function() {
-    console.log(this.name);
+    console.log(this.name); //Abigirl
+    //console.log(this.hobbies);
   }
 };
 
@@ -32,6 +33,9 @@ myObject.logName();
 // Data in localStorage() is saved across browser sessions.
 
 //sessionStorage
+//stores string data like JSON
+//setItem : method to store with key-value
+//getItem : method to retrieve the value associated with the given key
 sessionStorage.setItem("mySessionStore", JSON.stringify(myObject));
 const mySessionData = JSON.parse(sessionStorage.getItem("mySessionStore"));
 console.log(mySessionData);

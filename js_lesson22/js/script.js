@@ -15,12 +15,13 @@ console.log(plucking());
 // Import the full namespace
 import * as Guitars from "./guitars.js";
 
-console.log(Guitars.playGuitar());
+console.log(playGuitar());
 console.log(Guitars.shredding());
 console.log(Guitars.plucking());
 
 // Import the User example
 import User from "./user.js";
-const me = new User("email@email.com", "James");
+const me = new User("email@email.com", "Abigirl", "Chicken & Mushroom Pasta");
 console.log(me);
 console.log(me.greeting());
+console.log(me.favouriteFood());

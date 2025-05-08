@@ -1,34 +1,38 @@
 // Classes
 
 // Example
-class Pizza {
-  constructor(pizzaType) {
-    this.type = pizzaType;
-    this.size = "medium";
-    this.crust = "original";
+
+class Juice {
+  constructor(juiceType) {
+    this.type = juiceType;
+    this.size = "small";
+    this.flavour = "orange";
   }
-  bake() {
-    console.log(`Baking a ${this.size} ${this.type} ${this.crust} crust pizza. `);
+  
+  mix() {
+    console.log(`Mixing a ${this.size} ${this.type} ${this.flavour} juice. `);
+    
   }
 }
 
 // Pass a parameter into a class
-const myPizza = new Pizza("pepperoni");
-myPizza.bake();
+const myJuice = new Juice("pulpy");
+myJuice.mix();
+
 
 
 // Factory Function
 // Another way to create an object in JavaScript
-function pizzaFactory(pizzaSize) {
-  const crust = "original";
-  const size = pizzaSize;
+function bookFactory(bookSize) {
+  const type = "story";
+  const size = bookSize;
   return {
-    bakeTwo: () => console.log(`Baking a ${size} ${crust} crust pizza.`)
+    publishTwo: () => console.log(`Publishing a ${size} ${type} book.`)
   };
 }
 
-const myPizzaTwo = pizzaFactory("small");
-myPizzaTwo.bakeTwo();
+const mypublishTwo = bookFactory("medium");
+mypublishTwo.publishTwo();
 
 // Sources 👇
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes

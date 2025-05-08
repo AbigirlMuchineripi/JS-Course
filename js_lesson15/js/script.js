@@ -1,52 +1,54 @@
 // Objects
 
 // Key-Value pairs in curly braces
-const myObj = { name: "James"};
-console.log(myObj);
-console.log(myObj.name);
-
+const myObj = {
+   name: "Aby"
+  };
+console.log(myObj); //{name: 'Aby'}
+console.log(myObj.name);//Aby
+console.log(typeof myObj);//object
 
 const anotherObj = {
   alive : true,
-  answer: 42,
-  hobbies: ["Music","Design","Jiu-Jitsu"],
-  beverage: {
-    morning: "Coffee",
-    afternoon: "Fanta"
+  answer: 20,
+  hobbies: ["Music","Graphics Designing","Coding"],
+  meal: {
+    morning: "Breakfast",
+    afternoon: "Lunch"
   },
   // object Method 👇
   action: function() {
-    return `Time for ${this.beverage.morning}`;
+    return `Time for ${this.meal.morning}`;
   }
 };
 
 // Access specific part of object
 console.log(anotherObj.alive);
-console.log(anotherObj.hobbies[0]);
-console.log(anotherObj["beverage"]);
+console.log(anotherObj.hobbies[2]);
+console.log(anotherObj["meal"]);
 
 
 // Another Example 
-const vehicle = {
+const limousine = {
   wheels: 4,
   engine: function() {
-    return "Vroooom!";
+    return "shhhh!";
   }
 }
 
-const truck = Object.create(vehicle);
-truck.doors = 2;
-console.log(truck);
-console.log(truck.wheels); // Inheritance
-console.log(truck.engine());
+const car = Object.create(limousine);
+car.doors = 6;
+console.log(car);
+console.log(car.wheels); // Inheritance
+console.log(car.engine());
 
 const band = {
-  guitar: "Jimi Hendrix",
-  bass: "Noel Redding",
-  drums: "Mitch Mitchell",
+  guitarist: "Justine Derrico",
+  bass: "Brian Gass",
+  drummer: "Mark Schulman",
 };
 console.log(Object.keys(band)); //Object.keys() ex: guitar
-console.log(Object.values(band)); // Object.values() ex: Jimi Hendrix
+console.log(Object.values(band)); // Object.values() ex: Brian Gass
 // delete band.drums; => to delete an object value
 
 // Using a for-in loop, to loop through an object
@@ -57,7 +59,20 @@ for (let job in band) {
 
 // Destructuring Objects
 
-// Define variables by naming the key in an object the we want to pull the variable from
+// We define the variables by naming a key and an object the we want to pull the variable from
 
-const { guitar: myVariable } = band;
+const { guitarist: myVariable  } = band;
 console.log(myVariable);
+
+//shorten the code like
+const { guitarist ,drummer , bass} = band;
+console.log(drummer);
+console.log(bass);
+console.log(guitarist);
+
+let vocals = "Erric Shayne"
+function sings ({vocals}){
+  return `${vocals} sings!`
+};
+console.log(sings(band))
+

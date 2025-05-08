@@ -19,7 +19,7 @@ export { shredding, plucking };
 
 
 // Exporting Modules, inline (quicker)
-export function playGuitar() {
+export default function playGuitar() {
     return "Playing guitar!";
 };
 

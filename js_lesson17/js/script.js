@@ -1,20 +1,23 @@
 // JSON: JavaScript Object Notation 
 
-/*JSON is used to send and receive data. JSON is a text format for storing and transporting data. It is completely language independent, meaning JSON is used to send & receive data in many languages...not just in JavaScript. */
+/*JSON is used to send and receive data. 
+JSON is a text format for storing and transporting data.
+It is completely language independent, meaning JSON is used to
+send & receive data in many languages...not just in JavaScript. */
 
-const myObj = {
-  name: "James",
-  hobbies: ["Music", "Design", "Jiu Jitsu"],
-  hello: function() {
-    console.log("Hello!");
+const myProfile = {
+  name: "Abigirl",
+  hobbies: ["Music", "Coding", "Plaiting"],
+  watching: function() {
+    console.log("Crime Investigation!");
   }
 };
-console.log(myObj);
-console.log(myObj.name); // Call the name
-myObj.hello(); // Call the "hello" method
-console.log(typeof myObj); // Object
+console.log(myProfile);
+console.log(myProfile.name); // Call the name
+myProfile.watching(); // Call the "watching" method
+console.log(typeof myProfile); // Object
 
-const sendJSON = JSON.stringify(myObj);
+const sendJSON = JSON.stringify(myProfile);
 console.log(sendJSON); // Converts Object into JSON
 console.log(typeof sendJSON); // It is a string
 // JSON does not send functions, so "hello" does not appear in the JSON file.
@@ -22,7 +25,8 @@ console.log(typeof sendJSON); // It is a string
 
 // JSON.parse()
 
-/* When receiving data from a web server, the data is always a string. Parse the data with JSON.parse(), and the data becomes a JavaScript object. */
+/* When receiving data from a web server, the data is always a string.
+ Parse the data with JSON.parse(), and the stringified data becomes a JavaScript object. */
 
 // JSON.parse() = JSON to Object
 
