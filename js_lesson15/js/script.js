@@ -11,7 +11,7 @@ console.log(typeof myObj);//object
 const anotherObj = {
   alive : true,
   answer: 20,
-  hobbies: ["Music","Graphics Designing","Coding"],
+  hobbies: ["Music"," Designing","Coding"],
   meal: {
     morning: "Breakfast",
     afternoon: "Lunch"
