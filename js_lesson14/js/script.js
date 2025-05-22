@@ -1,4 +1,4 @@
-// Modified Rock, Paper, Scissors: Refactored with While Loop and an Array
+//  Rock, Paper, Scissors: Refactored with While Loop and an Array
 let playGame = confirm("Shall we play rock, paper, or scissors?");
 if (playGame) {
   //play
