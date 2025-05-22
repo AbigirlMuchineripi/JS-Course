@@ -1,4 +1,4 @@
-// Fetch API requires a discussion of...
+// Fetch API consists of :
 // Callbacks, Promises, and Async/Await 
 
 // Callbacks are functions passed to other functions as params
