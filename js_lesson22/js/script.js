@@ -1,6 +1,7 @@
 // Modules
 
 // By using type="module", strict-mode is automatically applied in your JavaScript
+// No need to use defer
 
 // Import the guitars.js module
 import playGuitar from "./guitars.js"; 
