@@ -1,5 +1,5 @@
 # javascript-course 
-# Reverse-Engineered By
+# Reverse-Coded By
 - 🔗 https://github.com/AbigirlMuchineripi
 
 ### 📺 Course
