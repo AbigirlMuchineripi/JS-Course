@@ -1,4 +1,6 @@
-# javascript-course
+# javascript-course 
+# Reverse-Engineered By
+- 🔗 https://github.com/AbigirlMuchineripi
 
 ### 📺 Course
 - 🔗 [YouTube Playlist](https://tinyurl.com/2homsp5t) for this repository.
