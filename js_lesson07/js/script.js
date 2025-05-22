@@ -21,7 +21,7 @@
 // }
 
 
-// Example #1
+// Example 1
 switch (2) {
 
     case 1: 
@@ -40,7 +40,7 @@ switch (2) {
     console.log("No Match");
 }
 
-// Example #2: Evaluate Numbers
+// Example 2: Evaluate Numbers
 switch (Math.floor(Math.random() * 5 + 1)) {
 
     case 1: 
