@@ -7,6 +7,10 @@ console.log(myVariable);
 const myCity = "Mutare";
 console.log(myCity);
 // Expected Output: Mutare
+const myFavoriteFood = "Pizza";
+console.log(myFavoriteFood);
+// Expected Output: Pizza
+
 
 // The length property returns the number of code units in the string.
 console.log(myVariable.length);
