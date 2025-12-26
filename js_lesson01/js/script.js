@@ -9,6 +9,9 @@ console.log("Abigirl");
 // Expected Output: Abigirl
 console.log(typeof "Abigirl");
 // Expected Output: string
+const greeting = "Hello Abigirl!";
+console.log(typeof "greeting");
+// Expected Output: string
 
 // Number. JavaScript number values represent floating-point numbers.
 console.log(typeof 93);
